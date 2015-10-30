@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config>    
+    <modules>
+		<!-- Controller name should be Alanstormdotcom_Helloworld_IndexController -->
+        <Alanstormdotcom_Helloworld>
+			<version>0.1.0</version>
+        </Alanstormdotcom_Helloworld>
+    </modules>
+	
+	<frontend>
+        <routers>
+            <Alanstormdotcom_Helloworld>
+                <use>standard</use>
+                <args>
+					<module>Alanstormdotcom_Helloworld</module>
+					<!--
+					'helloworld' below is used to access the page at frontend.
+					for example www.url.com/helloworld/index/index
+					the last 'index' is the name of the action in Alanstormdotcom_Helloworld_IndexController
+					we can choose any name for frontend url, in place of 'helloworld'
+					-->
+					<frontName>helloworldu</frontName>
+				</args>
+			</Alanstormdotcom_Helloworld>
+			
+			<!--
+				we can have multiple url paths configured for a single module
+				so the below path named 'geee' also works the same as above
+			-->
+			<geee>
+                <use>standard</use>
+                <args>
+					<module>Alanstormdotcom_Helloworld</module>
+					<!--
+					'helloworld' below is used to access the page at frontend.
+					for example www.url.com/helloworld/index/index
+					the last 'index' is the name of the action in Alanstormdotcom_Helloworld_IndexController
+					we can choose any name for frontend url, in place of 'helloworld'
+					-->
+					<frontName>geee</frontName>
+				</args>
+			</geee>
+			
+        </routers>  
+    </frontend>
+</config> 
